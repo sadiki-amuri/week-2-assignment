@@ -7,7 +7,7 @@ amount FROM payments;
 
 SELECT orderDate,
 requiredDate,
-status FROM ordersWHERE status = 'In Process'
+status FROM orders WHERE status = 'In Process'
 ORDER BY orderDate DESC;
 
 SELECT firstName,
