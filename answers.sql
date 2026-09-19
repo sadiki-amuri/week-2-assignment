@@ -1,36 +1,21 @@
- USE sales;
 
+USE sales;
 SELECT
 checkNumber,
 paymentDate,
-amount
-FROM payments;
+amount FROM payments;
 
-USE sales;
-SELECT
-orderDate,
+SELECT orderDate,
 requiredDate,
-status
-FROM orders
-WHERE status = 'In Process'
+status FROM ordersWHERE status = 'In Process'
 ORDER BY orderDate DESC;
 
-USE sales;
-SELECT
-firstName,
+SELECT firstName,
 lastName,
-email
-FROM employees
-WHERE jobTitle ='Sales Rep'
-ORDER BY employeeNumber DESC
+email FROM employees
+WHERE jobTitle ='Sales Rep' ORDER BY employeeNumber DESC
 
-Use sales;
 SELECT * FROM offices;
 
-USE sales;
-SELECT
-productName,
-quantityInStock
-FROM products
-ORDER BY buyPrice ASC
-LIMIT 5;
+SELECT productName,
+ quantityInStock FROM products ORDER BY buyPrice ASC LIMIT 5;
